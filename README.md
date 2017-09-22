@@ -13,8 +13,8 @@ This tool aims to provide a easy-plug-in Convolution neural network in high-leve
 For details of the architecture of this toolbox, please go to my own blog. A sample of using it for mnist dataset is shown here.
 open cnn_basic.py first, and go to the main function
 
-    '''
-def main():
+   
+'def main():'
     #Data request: Must be a csv, first row is header, first colum is label, second colum is flatten features in one row
     #You have to go to the utility.py --getImageData() function to change the path of the data  you are reading
     X, Y = getImageData()
@@ -44,7 +44,7 @@ def main():
 
 if __name__ == '__main__':
     main()
-        '''
+
 Basically, it will read data in the class utility from function getImageData() and return images with shape of (N,W,H,C) and corresponding labels.
 
 Then use model=CNN() to setup the network parameters including convolution layer size and numbers, pool size for each convolution layer, whether use batch normalizations, fully connected layer num and size, dropout rate for each fully connceted layer, optimizers, train and test split ratio and the path to save your trained model. 
